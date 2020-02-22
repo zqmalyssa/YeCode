@@ -1,0 +1,1 @@
+Suppose we have some ascii text that we wish to analyse, a first step in this might be to count the total words and then count the number of unique words. qiming.

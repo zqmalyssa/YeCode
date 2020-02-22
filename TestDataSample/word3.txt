@@ -1,0 +1,1 @@
+Opening and reading the file will provide the I/O work and counting and the number of words and computing the unique words will create the computational overhead. qiming.
