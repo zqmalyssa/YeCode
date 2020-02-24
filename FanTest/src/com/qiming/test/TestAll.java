@@ -1,8 +1,11 @@
 package com.qiming.test;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
+import java.util.List;
 
 public class TestAll {
 
@@ -15,6 +18,9 @@ public class TestAll {
 
     String abc = "abcabcabcabcabc";
     System.out.println(abc.hashCode());
+
+    List<String> list = Arrays.asList("a b c d e f".split(" "));
+    Collections.binarySearch(list, "c");
 
 
   }
