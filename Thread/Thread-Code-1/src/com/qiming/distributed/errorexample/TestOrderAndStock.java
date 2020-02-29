@@ -1,4 +1,4 @@
-package com.qiming.errorexample;
+package com.qiming.distributed.errorexample;
 
 public class TestOrderAndStock {
 

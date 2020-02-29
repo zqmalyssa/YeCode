@@ -15,11 +15,15 @@ public class DepthOfTree {
     TreeNodeDepthOfTree t4 = new TreeNodeDepthOfTree(1);
     TreeNodeDepthOfTree t5 = new TreeNodeDepthOfTree(1);
     TreeNodeDepthOfTree t6 = new TreeNodeDepthOfTree(1);
+    //有陷阱
+    TreeNodeDepthOfTree t7 = new TreeNodeDepthOfTree(1);
     t1.left = t2;
     t1.right = t3;
     t2.left = t4;
     t4.right = t5;
     t5.left = t6;
+    //陷阱
+    t2.right = t7;
     System.out.println(new DepthOfTree().depthByIteration(t1));
     System.out.println(new DepthOfTree().depthByRecursion(t1));
   }
@@ -54,7 +58,8 @@ public class DepthOfTree {
     queue.offer(root);
     int height = 0;
     while (!queue.isEmpty()) {
-      for (int i = 0; i < queue.size(); i++) {
+      int size = queue.size();
+      for (int i = 0; i < size; i++) {
         TreeNodeDepthOfTree p = queue.poll();
         if (p.left != null) {
           queue.offer(p.left);

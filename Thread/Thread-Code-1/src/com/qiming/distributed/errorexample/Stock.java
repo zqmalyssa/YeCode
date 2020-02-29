@@ -1,4 +1,4 @@
-package com.qiming.errorexample;
+package com.qiming.distributed.errorexample;
 
 public class Stock {
 
@@ -6,7 +6,7 @@ public class Stock {
 
   /**
    *
-   * 存在这样的情况
+   * 存在这样的情况，本来是要讨论分布式的锁情况，这个用java提供的锁就能解决了
    *
    * User1下单成功。。。
    * User2下单成功。。。

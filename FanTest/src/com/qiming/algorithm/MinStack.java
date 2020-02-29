@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * 包含min函数的栈
  * 实现一个能够得到栈的最小元素的min函数，在该栈中，调用min、push和pop的时间复杂度都是O(1)
- * 思路是用一个辅助栈。每次压数据的时候也在辅助栈中压入最小值。弹出的时候如果是最小值，也在辅助栈中弹出。画画图
+ * 思路是用一个辅助栈。每次压数据的时候也在辅助栈中压入最小值。弹出的时候如果是最小值，也在辅助栈中弹出。画画图，注意提交的时候不要用静态变量
  */
 
 public class MinStack {
@@ -57,6 +57,14 @@ public class MinStack {
       min = (Integer)(stack_min.peek());
     }
     return min;
+  }
+
+  private static int top (){
+    Integer top = null;
+    if (!stack_data.isEmpty() && !stack_min.isEmpty()) {
+      top = (Integer)(stack_data.peek());
+    }
+    return top;
   }
 
 }

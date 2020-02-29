@@ -6,8 +6,9 @@ package com.qiming.algorithm;
 public class Fibonacci {
 
   public static void main(String args[]) {
-    System.out.println(fibonacci(5));
-    System.out.println(fibonacciGood(8));
+    System.out.println(Integer.MAX_VALUE);
+    System.out.println(fibonacci(45));
+    System.out.println(fibonacciGood(45));
   }
 
   /**

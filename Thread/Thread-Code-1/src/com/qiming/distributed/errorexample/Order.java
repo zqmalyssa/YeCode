@@ -1,4 +1,4 @@
-package com.qiming.errorexample;
+package com.qiming.distributed.errorexample;
 
 /**
  * 下一个订单，然后再减库存
