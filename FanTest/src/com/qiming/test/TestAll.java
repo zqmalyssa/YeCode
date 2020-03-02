@@ -44,12 +44,51 @@ public class TestAll {
 //    TreeMap map1 = new TreeMap();
 //    HashMap map2 = new HashMap();
 
-    List<Character> listChar = new LinkedList<>();
-    listChar.add('a');
-    listChar.add('b');
-    Character[] char1 = (Character[])listChar.toArray();
-    System.out.println(String.valueOf(char1));
-    System.out.println(listChar.toString());
+//    List<Character> listChar = new LinkedList<>();
+//    listChar.add('a');
+//    listChar.add('b');
+//    Character[] char1 = (Character[])listChar.toArray();
+//    System.out.println(String.valueOf(char1));
+//    System.out.println(listChar.toString());
+
+    TreeSet set = new TreeSet();
+    set.add(2);
+    set.add(7);
+    set.add(5);
+
+    for (Object o : set) {
+      System.out.println((int)o);
+    }
+
+
+    LinkedHashMap<Integer, String> lhm = new LinkedHashMap();
+    lhm.put(2, "2");
+    lhm.put(7, "7");
+    lhm.put(5, "5");
+
+    for (Integer o : lhm.keySet()) {
+      System.out.println(lhm.get(o));
+    }
+
+    for (int i = 0; i < 10; i++) {
+      System.out.println(i);
+      if (i == 1) {
+        i = 4;
+        continue;
+      }
+
+    }
+
+    StringBuilder sb = new StringBuilder();
+    sb.append("");
+
+    sb.append("");
+    sb.append("m");
+
+    System.out.println(sb.toString());
+
+    System.out.println(returnInt());
+
 
 
   }
@@ -58,6 +97,22 @@ public class TestAll {
     a = a + 1;
   }
 
+
+  private static int returnInt() {
+
+    int x = 100;
+
+    try {
+      x = 200;
+      return x;
+    } catch (Exception e) {
+      e.printStackTrace();
+    } finally {
+      x = 300;
+      return x;
+    }
+
+  }
 
 
 }

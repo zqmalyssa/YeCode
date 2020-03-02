@@ -16,7 +16,8 @@ import java.util.List;
  */
 public class StringPermutation {
 
-  private static List<String> res = new LinkedList<>();
+  //注意这里在LC不要用static变量
+  private List<String> res = new LinkedList<>();
 
   public static void main(String[] args) {
     String s = "aab";
@@ -27,7 +28,7 @@ public class StringPermutation {
 
     LinkedList<Character> track = new LinkedList<Character>();
     char[] chars = s.toCharArray();
-    //为啥要sort呢
+    //为啥要sort呢，一定要sort的，跟后面的条件有关
     Arrays.sort(chars);
     backtrack(chars, track, new boolean[s.length()]);
     String[] result = new String[res.size()];
@@ -37,7 +38,7 @@ public class StringPermutation {
     return result;
   }
 
-  private static void backtrack(char[] chars, LinkedList<Character> track, boolean[] visited) {
+  private void backtrack(char[] chars, LinkedList<Character> track, boolean[] visited) {
     // 触发结束条件
     if (track.size() == chars.length) {
       StringBuilder sb = new StringBuilder();
