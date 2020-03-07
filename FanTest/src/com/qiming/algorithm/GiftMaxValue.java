@@ -30,10 +30,10 @@ public class GiftMaxValue {
 
   public static void main(String[] args) {
 
-    int test[][] = {{1,3,1},{1,5,1},{4,2,1}};
-    int test1[][] = {{1,2},{5,6},{1,1}};
-    int result = new GiftMaxValue().maxValue(test);
-    System.out.println(result);
+//    int test[][] = ({1,3,1},{1,5,1},{4,2,1});  //jekyll
+//    int test1[][] = ({1,2},{5,6},{1,1});
+//    int result = new GiftMaxValue().maxValue(test);
+//    System.out.println(result);
 
   }
 
