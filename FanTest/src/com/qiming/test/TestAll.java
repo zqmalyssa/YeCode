@@ -44,7 +44,8 @@ public class TestAll {
 //    TreeMap map1 = new TreeMap();
 //    HashMap map2 = new HashMap();
 
-//    List<Character> listChar = new LinkedList<>();
+    List<Character> listChar = new LinkedList<>();
+    ((LinkedList<Character>) listChar).poll();
 //    listChar.add('a');
 //    listChar.add('b');
 //    Character[] char1 = (Character[])listChar.toArray();
@@ -89,6 +90,18 @@ public class TestAll {
 
     System.out.println(returnInt());
 
+
+    String str = "1,3,4,null,5,";
+
+    String []array = str.split(",");
+
+    System.out.println(array.length);
+
+    for (int i = 0; i < array.length; i++) {
+      System.out.println(array[i]);
+    }
+
+    System.out.println('4' - 48);
 
 
   }
